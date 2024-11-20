@@ -39,17 +39,23 @@ This project focuses on analyzing loan data to uncover meaningful insights that 
     - Defaults: About one-sixth of loans are charged off, indicating a significant rate of defaults.
     - Homeownership: Many loans are taken by individuals who rent or mortgage their homes.
     - Loan Purpose: Debt consolidation is the most common reason for borrowing.
-    - Income Verification: A majority of loans are granted to individuals with unverified income sources.
+    - Income Verification: Most loans are granted to individuals with unverified income sources.
     - Loan Issuance Growth: The number of loans issued has increased year over year, reflecting growing demand.
-    - Monthly Trends: Loan issuance shows a steady increase throughout the year, particularly from January to December.
+    - Monthly Trends: Loan issuance steadily increases throughout the year, particularly from January to December.
 
 - Bivariate/Multivariate Analysis:
     - Loan Amount vs Loan Status: Higher loan grades are associated with smaller loan amounts.
-    - Funded Amount vs Loan Status: Lower-grade borrowers tend to receive larger funded amounts, increasing default risk.
+    - Funded Amount vs Loan Status: Lower-grade borrowers receive larger funded amounts, increasing default risk.
     - Interest Rate vs Loan Status: Higher interest rates in lower grades are linked to higher defaults.
     - Installment vs Loan Status: Higher installments in lower grades increase the likelihood of defaults.
-    - Annual Income vs Loan Status: Borrowers with higher incomes and lower grades (considering G being lowest) are more likely to default.
+    - Annual Income vs Loan Status: Borrowers with higher incomes and lower grades (considering G the lowest) are more likely to default.
     - Debt-to-Income Ratio vs Loan Status: High DTI ratios in lower grades indicate over-leveraged borrowers, increasing default risk.
+    - Term vs Loan Status: Loans with a 36-month term are less likely to default than 60-month term loans.
+    - Grade vs Loan Status: A-grade loans have a very low risk compared to the other grades.
+    - Home Ownership vs Loan Status: Homeowners are more likely to fully repay loans than renters or mortgagers.
+    - Purpose vs Loan Status: Loans for debt consolidation are most commonly repaid, but most defaulters are seen in the same category as well.
+    - Verification Status vs Loan Status: Surprisingly loans without verified income are less likely to default.
+    - Issue Year vs Loan Status: Fully paid loans increased every year, but the defaulters increased as well.
 
 - Correlations:
     - Loan Amount & Funded Amount (0.98): Highly correlated, as the funded amount is directly tied to the loan amount.
